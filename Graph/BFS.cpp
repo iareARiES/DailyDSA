@@ -18,7 +18,7 @@ class Solution{
             int node = q.front(); //start from the starting element
             q.pop(); //FIFO logic applied
             bfs.push_back(node);
-            for(auto it: adj[node]){
+            for(auto it: adj[node]){  //travles through the neighbors of node
                 if(!vis[it]){
                     vis[it] =1;
                     q.push(it);
